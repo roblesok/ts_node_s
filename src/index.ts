@@ -1,4 +1,3 @@
-
 greet('World')
 
 function greet(name: string) {

@@ -16,9 +16,18 @@ $ npm run lint
 $ npm run lint:fix
 ```
 
+## Format
+
+```
+-- check
+$ npm run format
+-- fix
+$ npm run format:fix
+```
+
 ## Validate 
 
 ```
--- check all: tsc, eslint
+-- check all: tsc, eslint, prettier
 $ npm run validate
 ```
