@@ -13,7 +13,8 @@
     "format": "npm run p -- --list-different",
     "format:fix": "npm run p -- --write",
     "validate": "npm run check-types && npm run lint && npm run format",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest"
   },
   "keywords": [
     "node",
@@ -22,13 +23,19 @@
   "author": "<roblesok>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.23",
     "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
+    "babel-jest": "^27.0.6",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^7.0.0",
+    "jest": "^27.0.6",
     "nodemon": "^2.0.9",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5"

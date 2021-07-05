@@ -31,3 +31,9 @@ $ npm run format:fix
 -- check all: tsc, eslint, prettier
 $ npm run validate
 ```
+
+## TEST 
+
+```
+$ npm run test
+```
