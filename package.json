@@ -5,13 +5,23 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc --watch",
-    "dev": "nodemon --quiet --exec 'clear;node dist/index.js'"
+    "dev": "nodemon --quiet --exec 'clear;node dist/index.js'",
+    "check-types": "tsc",
+    "lint": "eslint --ignore-path .gitignore --ext .ts .",
+    "lint:fix": "npm run lint -- --fix",
+    "validate": "npm run check-types && npm run lint"
   },
-  "keywords": ["node", "typescript"],
+  "keywords": [
+    "node",
+    "typescript"
+  ],
   "author": "<roblesok>",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.30.0",
     "nodemon": "^2.0.9",
     "typescript": "^4.3.5"
   }
