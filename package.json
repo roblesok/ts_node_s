@@ -12,7 +12,8 @@
     "p": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
     "format": "npm run p -- --list-different",
     "format:fix": "npm run p -- --write",
-    "validate": "npm run check-types && npm run lint && npm run format"
+    "validate": "npm run check-types && npm run lint && npm run format",
+    "prepare": "husky install"
   },
   "keywords": [
     "node",
@@ -27,6 +28,7 @@
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.0",
     "nodemon": "^2.0.9",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5"
